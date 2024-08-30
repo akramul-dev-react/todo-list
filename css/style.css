@@ -13,7 +13,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 15px 25px;
 }
 
 .navbar-logo a {
@@ -72,4 +72,24 @@ body {
     .navbar-toggle {
         display: flex;
     }
+}
+h1.selfabout{
+    font-size: 40px;
+    font-weight: 700;
+    color: wheat;
+    display: flex;
+    justify-content: center;
+}
+.aboutbody{
+    background: rgb(5, 84, 34);
+}
+
+.aboutcontainer{
+    width: 95%;
+    height: 100%;
+}
+.aboutp{
+    font-size: 16px;
+    font-weight: 300;
+    color: #ffff;
 }

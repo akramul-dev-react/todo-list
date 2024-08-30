@@ -8,25 +8,41 @@
     <link rel="icon" href="https://t3.ftcdn.net/jpg/05/34/10/54/240_F_534105487_I1qnRm1G8gUVlSK4lsIbhbqvohB3QTDu.jpg">
 </head>
 <body>
-    <div class="todo-container">
-        <p id="name">Md.Akramul Haque</p>
-        <div class="header">
-            <h1>My Todo List</h1>
-            <div class="task-status">
-                <div id="task-counter" class="counter">
-                    <span id="completed-counter">0</span>/<span id="total-counter">0</span>
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <a href="home.html">Logo</a>
+        </div>
+        <ul class="navbar-links" id="navLinks">
+            <li><a href="../home.html">Home</a></li>
+            <li><a href="./index.html">Todo List</a></li>
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+        </ul>
+        <div class="navbar-toggle" id="navToggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+          </nav>
+        <div class="todo-container">
+            <p id="name">Md.Akramul Haque</p>
+            <div class="header">
+                <h1>My Todo List</h1>
+                <div class="task-status">
+                    <div id="task-counter" class="counter">
+                        <span id="completed-counter">0</span>/<span id="total-counter">0</span>
+                    </div>
                 </div>
             </div>
+            <div class="input-section">
+                <input type="text" id="todo-input" placeholder="Add a new task...">
+                <button id="add-button">
+                    <img id="screnshot" src="img/Screenshot_8.png" alt="">
+                    Add Task</button>
+                <p id="error-message"></p>
+            </div>
+            <ul id="todo-list"></ul>
         </div>
-        <div class="input-section">
-            <input type="text" id="todo-input" placeholder="Add a new task...">
-            <button id="add-button">
-                <img id="screnshot" src="img/Screenshot_8.png" alt="">
-                Add Task</button>
-            <p id="error-message"></p>
-        </div>
-        <ul id="todo-list"></ul>
-    </div>
 
     <script src="script.js"></script>
 </body>
